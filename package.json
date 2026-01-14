@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "prettier --check .",
+    "test": "tsc --noEmit && prettier --check .",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "dev": "vite",
@@ -15,7 +15,10 @@
   "license": "ISC",
   "type": "module",
   "devDependencies": {
+    "@types/react": "^19.2.8",
+    "@types/react-dom": "^19.2.3",
     "prettier": "^3.7.4",
+    "typescript": "^5.9.3",
     "vite": "^7.3.1"
   },
   "dependencies": {
